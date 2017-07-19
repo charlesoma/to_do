@@ -1,0 +1,68 @@
+* { 
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    padding: 2em;
+    font-size: 15px;
+    font-family: helvetica, arial, sans-serif;
+  }
+  #container {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    width: 280px;
+    background: blue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 10px;
+  }
+ .btn {
+     padding-left: 10px;
+     padding-right: 10px;
+     border-radius: 3px; 
+     background: aquamarine;
+  }
+  #newitem {
+    width: 160px;
+  }
+  #todo {
+    width: 280px;
+    margin: 10px solid;
+    margin: 10px 10px;
+  }
+  #todo li:hover {
+    background: #ddd;
+}
+
+  #todo li {
+    border-radius: 2px;
+    list-style: none;
+    background: #eee;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  #todo li:nth-child(2n){
+    background: #ccc;
+  }
+  #todo li.done {
+    text-decoration: line-through;
+    text-decoration-color: red;
+  } 
+  #todo li:hover:after,
+  #todo li.done:after {
+    content: '✔';
+    color: #060;
+    position: absolute;
+    right: 5px;    
+  }
+  #todo li.done:hover:after {
+    content: 'x';
+    font-weight: bold;
+    color: #c00;
+    position: absolute;
+    right: 5px;    
+  }
